@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.navbar{
+    background-color: #130a33;
+    padding-top: 1em;
+}
+
+.logo{
+    background-image: url(../images/app-icon.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    display: block;
+    padding-left: 48px;
+    padding-top: 5px;
+    width: 110px;
+    height: 45px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 1em;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    background-image: url("../images/link-icon.png");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    border-top: 1px solid #211B3B;
+}
+
+header{
+    background-color: #211B3B;
+    
+}
+
+#intro{
+    color: white;
+    text-align: center;
+}
+
+.btn{
+    color: orange;
+    text-decoration: none;
+    border: 1px solid orange;
+    display: inline-block;
+    padding: 0.7em 4em;
+    border-radius: 0.4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.quotes ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+blockquote img{
+    width: 30px;
+    border-radius: 50%;
+    
+}
+
+cite::before{
+    content: "\2014";
+}
+
+@media (min-width: 760px){
+    .logo{
+        float: left;
+    }
+
+    nav a{
+        display: inline-block;
+        background-image: none;
+        border:none;
+    }
+
+    nav{
+        width: 80%;
+        text-align: right;
+    }
+}
+
+@media(min-width: 800px){
+    .quotes li{
+        width: 33.33%;
+        float: left;
+    }
+}
+
+
